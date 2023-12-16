@@ -33,7 +33,7 @@ A multi-lingual (Arabic and English) news app built using MUI components for the
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/news-app.git
+   git clone https://github.com/affanghazali/news-app.git
    ```
 
 2. Install Dependencies:
