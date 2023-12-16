@@ -44,14 +44,14 @@ A multi-lingual (Arabic and English) news app built using MUI components for the
 
 3. Create a .env file in the root directory with the following:
 
-   ```REACT_APP_NEWS_API_KEY=your-news-api-key
-
+   ```
+   REACT_APP_NEWS_API_KEY=your-news-api-key
    ```
 
 4. Run the app:
 
-   ```npm start
-
+   ```
+   npm start
    ```
 
 ## Usage
