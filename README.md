@@ -1,6 +1,6 @@
 # News App
 
-A multi-lingual (Arabic and English) news app built using MUI components for the front-end and Django for the back-end. The app retrieves news data from the News API and supports different themes and language preferences.
+A multi-lingual (Arabic and English) news app built using MUI components for the front-end. The app retrieves news data from the News API and supports different themes and language preferences.
 
 ## Table of Contents
 
