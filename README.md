@@ -1,46 +1,80 @@
-# Getting Started with Create React App
+# News App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A multi-lingual (Arabic and English) news app built using MUI components for the front-end and Django for the back-end. The app retrieves news data from the News API and supports different themes and language preferences.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Usage](#usage)
+- [API Key](#api-key)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Multi-lingual support (Arabic and English).
+- Dynamic theme selection (Light and Dark).
+- Select news topics using chips.
+- Responsive design with MUI components.
+- Error handling for API failures and image loading failures.
+- Small and focused commits for easy version tracking.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Technologies
 
-### `npm test`
+- [React](https://reactjs.org/) with [TypeScript](https://www.typescriptlang.org/)
+- [Material-UI (MUI)](https://mui.com/)
+- [News API](https://newsapi.org/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup
 
-### `npm run build`
+1. Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/your-username/news-app.git
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install Dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```cd mui-news-app
+   npm install
+   ```
 
-### `npm run eject`
+3. Create a .env file in the root directory with the following:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   ```REACT_APP_NEWS_API_KEY=your-news-api-key
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4. Run the app:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   ```npm start
 
-## Learn More
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Select your preferred language using the language toggle.
+- Choose a theme (Light/Dark) with the theme toggle.
+- Use chips to select news topics (e.g., Apple, Meta, Netflix, etc.).
+- View news articles with images and open them in a new tab.
+- Handle API failures and image loading failures gracefully.
+
+## API Key
+
+- This project uses the News API to fetch news data. You need to obtain a free API key from News API and set it in the .env file.
+
+## Folder Structure
+
+/news-app
+|-- /src
+| |-- /components
+| | |-- LanguageToggle.tsx
+| | |-- ThemeToggle.tsx
+| | |-- NewsList.tsx
+| |-- App.tsx
+| |-- index.tsx
+|-- .env
+|-- ... (other project files)
